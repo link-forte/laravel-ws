@@ -3,7 +3,7 @@ FROM amazonlinux:2
 # timezone設定
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
-RUN yum update -y && amazon-linux-extras install php8.0 postgresql13 vim -y && \
+RUN yum update -y && amazon-linux-extras install php8.2 postgresql13 vim -y && \
     yum clean metadata && yum install -y \
     curl \
     gcc-c++ \
